@@ -298,55 +298,84 @@
             <section class="text-gray-600 body-font">
               <style>
                 /* Custom styles for club cards */
+                .club-card {
+                  transition: all 0.3s ease;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+                }
+
+                .club-card:hover {
+                  transform: translateY(-10px);
+                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                }
+
+                .title-container {
+                  height: 4rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+
+                .separator {
+                  height: 2px;
+                  background: linear-gradient(to right, transparent, rgba(79, 70, 229, 0.5), transparent);
+                  margin: 0.75rem auto;
+                  width: 75%;
+                  border: none;
+                }
+
+                .position-title {
+                  color: #6366F1;
+                  font-weight: 500;
+                  margin-right: 0.25rem;
+                }
+
                 @media (max-width: 768px) {
-                  .club-card {
-                    margin-bottom: 2rem;
-                    width: 95% !important;
-                    max-width: 95% !important;
-                    margin-left: auto !important;
-                    margin-right: auto !important;
-                  }
-
-                  .member-list {
-                    font-size: 0.9rem;
-                  }
-
-                  .separator {
-                    margin: 1rem auto;
-                  }
-
-                  /* Increase width and reduce margins for mobile */
-                  .container {
-                    padding-left: 10px !important;
-                    padding-right: 10px !important;
-                  }
-
-                  .w-full.lg\:w-1\/3.md\:w-1\/2.px-4,
-                  .xl\:w-1\/3.md\:w-1\/2.w-full.p-4 {
+                  .club-container {
                     padding-left: 0.5rem !important;
                     padding-right: 0.5rem !important;
-                    width: 100% !important;
                   }
-
-                  .w-full.max-w-sm.mx-auto {
-                    max-width: 100% !important;
+                  
+                  .club-card {
+                    margin-bottom: 1.5rem;
+                    width: 90% !important;
+                    max-width: 90% !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    padding: 0.75rem !important;
                   }
-
-                  .p-6 {
-                    padding: 1rem !important;
+                  
+                  .club-card h2 {
+                    font-size: 1.1rem !important;
+                  }
+                  
+                  .club-card p {
+                    font-size: 0.85rem !important;
+                    margin-bottom: 0.5rem;
+                  }
+                  
+                  .title-container {
+                    height: 3rem;
+                  }
+                  
+                  .club-content {
+                    margin-top: 1rem !important;
                   }
                 }
 
-                /* Even smaller screens */
                 @media (max-width: 480px) {
-                  .container {
-                    padding-left: 5px !important;
-                    padding-right: 5px !important;
+                  .club-card {
+                    width: 95% !important;
+                    padding: 0.5rem !important;
                   }
-
-                  .club-card,
-                  .border.border-gray-200.p-6.rounded-lg.w-full.max-w-sm.mx-auto {
-                    width: 100% !important;
+                  
+                  .club-card h2 {
+                    font-size: 1rem !important;
+                  }
+                  
+                  .club-card p {
+                    font-size: 0.8rem !important;
+                    margin-bottom: 0.4rem;
                   }
                 }
               </style>
@@ -354,26 +383,26 @@
                 <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                   <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Clubs</h1>
                 </div>
-                <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-wrap -mx-4 club-container">
                   <!-- Club 1 -->
                   <div class="w-full lg:w-1/3 md:w-1/2 px-4 mb-8">
-                    <div class="club-card border border-gray-200 rounded-lg overflow-hidden shadow-md transform transition duration-500 hover:scale-105 hover:shadow-lg">
+                    <div class="club-card border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white hover:shadow-xl">
                       <div class="p-6">
-                        <div style="height: 4rem; display: flex; align-items: center; justify-content: center">
+                        <div class="title-container">
                           <h2 class="text-xl text-center font-semibold text-indigo-600">Cypher CC</h2>
                         </div>
-                        <hr class="separator border-gray-300 my-3 w-3/4 mx-auto" />
-                        <div class="mb-4" style="margin-top: 1.5rem;">
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">President:</span>
+                        <hr class="separator" />
+                        <div class="mb-4 club-content" style="margin-top: 1.5rem;">
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">President:</span>
                             <a href="https://www.instagram.com/may.be_soumya/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Soumyadip Das</a>
                           </p>
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">Secretary:</span>
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">Secretary:</span>
                             <a href="https://www.instagram.com/t_i_n_a__10/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Tina Ghosh</a>
                           </p>
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">Event Co.:</span>
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">Event Co.:</span>
                             <a href="https://www.instagram.com/nilsing_abhay/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Shoumyanil Biswas</a>
                           </p>
                         </div>
@@ -382,23 +411,23 @@
                   </div>
                   <!-- Club 2 -->
                   <div class="w-full lg:w-1/3 md:w-1/2 px-4 mb-8">
-                    <div class="club-card border border-gray-200 rounded-lg overflow-hidden shadow-md transform transition duration-500 hover:scale-105 hover:shadow-lg">
+                    <div class="club-card border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white hover:shadow-xl">
                       <div class="p-6">
-                        <div style="height: 4rem; display: flex; align-items: center; justify-content: center">
+                        <div class="title-container">
                           <h2 class="text-xl text-center font-semibold text-indigo-600">Cultural Society</h2>
                         </div>
-                        <hr class="separator border-gray-300 my-3 w-3/4 mx-auto" />
-                        <div class="mb-4" style="margin-top: 1.5rem;">
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">President:</span>
+                        <hr class="separator" />
+                        <div class="mb-4 club-content" style="margin-top: 1.5rem;">
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">President:</span>
                             <a href="https://www.instagram.com/nilsing_abhay/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Shoumyanil Biswas</a>
                           </p>
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">Secretary:</span>
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">Secretary:</span>
                             <a href="https://www.instagram.com/dawnskyana17/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Ananya Rishi</a>
                           </p>
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">Event Co.:</span>
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">Event Co.:</span>
                             <a href="#" target="_self" class="hover:text-indigo-500 transition-colors duration-300">Snigdha Karmakar</a>
                           </p>
                         </div>
@@ -407,23 +436,23 @@
                   </div>
                   <!-- Club 3 -->
                   <div class="w-full lg:w-1/3 md:w-1/2 px-4 mb-8">
-                    <div class="club-card border border-gray-200 rounded-lg overflow-hidden shadow-md transform transition duration-500 hover:scale-105 hover:shadow-lg">
+                    <div class="club-card border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white hover:shadow-xl">
                       <div class="p-6">
-                        <div style="height: 4rem; display: flex; align-items: center; justify-content: center">
+                        <div class="title-container">
                           <h2 class="text-xl text-center font-semibold text-indigo-600">Sports Association</h2>
                         </div>
-                        <hr class="separator border-gray-300 my-3 w-3/4 mx-auto" />
-                        <div class="mb-4" style="margin-top: 1.5rem;">
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">President:</span>
+                        <hr class="separator" />
+                        <div class="mb-4 club-content" style="margin-top: 1.5rem;">
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">President:</span>
                             <a href="https://www.instagram.com/divyajit_13_12/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Divyajit Singha</a>
                           </p>
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">Secretary:</span>
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">Secretary:</span>
                             <a href="https://www.instagram.com/soumyajit_santra_/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Soumyajit Santra</a>
                           </p>
-                          <p class="text-lg text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
-                            <span class="font-medium">Event Co.:</span>
+                          <p class="text-gray-800" style="white-space: nowrap; font-size: 0.95rem;">
+                            <span class="position-title">Event Co.:</span>
                             <a href="https://www.instagram.com/shot_on_mobile__?igsh=MXhuZ2d5d3k4ajI2cw==" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Hiranmay Sarkar</a>
                           </p>
                         </div>
@@ -458,8 +487,30 @@
                       });
                     }
                   }
+                  
+                  // Add subtle animation when cards come into view
+                  function addScrollAnimation() {
+                    const cards = document.querySelectorAll('.club-card');
+                    const observer = new IntersectionObserver((entries) => {
+                      entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          entry.target.style.opacity = '1';
+                          entry.target.style.transform = 'translateY(0)';
+                        }
+                      });
+                    }, { threshold: 0.1 });
+                    
+                    cards.forEach(card => {
+                      card.style.opacity = '0';
+                      card.style.transform = 'translateY(20px)';
+                      card.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                      observer.observe(card);
+                    });
+                  }
+                  
                   // Run on load and resize
                   equalizeCardHeights();
+                  addScrollAnimation();
                   window.addEventListener('resize', equalizeCardHeights);
                 });
               </script>
