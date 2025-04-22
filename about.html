@@ -51,18 +51,21 @@
         }
 
         #logo-nexgen {
-          position: relative;
-          left: 0;
-          margin-left: 0 !important;
-          transform: translateX(-120px);
+          position: absolute !important;
+          top: -14px !important;
+          transform: translate(-150px, 14px) !important;
         }
         .columns.is-mobile.is-vcentered {
+          position: relative !important;
           margin-left: 0 !important;
           padding-left: 0 !important;
+          overflow: visible !important;
         }
         .column.is-mobile.is-vcentered {
+          position: relative !important;
           margin-left: 0 !important;
           padding-left: 0 !important;
+          overflow: visible !important;
         }
       }
     </style>
@@ -200,7 +203,7 @@
       <header id="nexgen-header" class="columns is-fluid is-marginless">
         <div class="column is-mobile is-vcentered">
           <div class="columns is-mobile is-vcentered">
-            <div id="logo-nexgen" class="column" style="margin-left: 0; padding-left: 0;">
+            <div id="logo-nexgen" class="column" style="position: absolute !important; top: -14px !important; transform: translate(-150px, 14px) !important;">
               <div class="logo-nexgen">
                 <a href="index.html" rel="home">
                   <img src="img/logo.png" alt="nexgen" class="logo hoverable" />
