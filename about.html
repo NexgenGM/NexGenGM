@@ -230,23 +230,35 @@
             </section>
             <!-- Members Section -->
             <section class="text-gray-600 body-font">
+              <style>
+                /* Mobile-specific styles for team cards */
+                @media (max-width: 767px) {
+                  .team-card {
+                    width: 70% !important;
+                    max-width: 220px !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    border: 2px solid #e5e7eb !important;
+                  }
+                }
+              </style>
               <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                   <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Meet Our Team</h1>
-                  <!-- <p class="lg:w-1/2 w-full leading-relaxed text-gray-500"></p> -->
+                  <p class="lg:w-1/2 w-full leading-relaxed text-gray-500"></p>
                 </div>
                 <div class="flex flex-wrap -mx-4 justify-center">
                   <!-- Card 1 -->
                   <div class="xl:w-1/3 md:w-1/2 w-full p-4 flex justify-center">
-                    <div class="border border-gray-200 p-6 rounded-lg w-full max-w-sm mx-auto transform transition duration-500 hover:scale-105 hover:shadow-lg text-center md:w-full sm:w-4/5 w-3/4 sm:mx-5 mx-7 sm:p-6 p-4">
+                    <div class="team-card border border-gray-200 p-6 rounded-lg w-full max-w-sm mx-auto transform transition duration-500 hover:scale-105 hover:shadow-lg text-center" style="border: 2px solid #e5e7eb; width: 70% !important; max-width: 280px !important;">
                       <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 mx-auto">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                           <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                           <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                       </div>
-                      <p class="leading-relaxed text-base text-indigo-500 font-medium text-center sm:text-base text-sm">President</p>
-                      <h2 class="text-lg text-gray-900 font-medium title-font mb-2 member-name text-center mx-auto sm:text-lg text-base" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                      <p class="leading-relaxed text-base text-indigo-500 font-medium text-center sm:text-base text-xs">President</p>
+                      <h2 class="text-base text-gray-900 font-medium title-font mb-2 member-name text-center mx-auto" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.9rem;">
                         <a href="https://www.instagram.com/isanjaym22/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300"> Sanjay Mandal </a>
                       </h2>
                       <p class="leading-relaxed text-sm text-gray-600 text-center sm:text-sm text-xs">
@@ -256,15 +268,15 @@
                   </div>
                   <!-- Card 2 -->
                   <div class="xl:w-1/3 md:w-1/2 w-full p-4 flex justify-center">
-                    <div class="border border-gray-200 p-6 rounded-lg w-full max-w-sm mx-auto transform transition duration-500 hover:scale-105 hover:shadow-lg text-center md:w-full sm:w-4/5 w-3/4 sm:mx-5 mx-7 sm:p-6 p-4">
+                    <div class="team-card border border-gray-200 p-6 rounded-lg w-full max-w-sm mx-auto transform transition duration-500 hover:scale-105 hover:shadow-lg text-center" style="border: 2px solid #e5e7eb; width: 70% !important; max-width: 280px !important;">
                       <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 mx-auto">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                           <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                           <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                       </div>
-                      <p class="leading-relaxed text-base text-indigo-500 font-medium text-center sm:text-base text-sm"> Secretary </p>
-                      <h2 class="text-lg text-gray-900 font-medium title-font mb-2 member-name text-center mx-auto sm:text-lg text-base" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                      <p class="leading-relaxed text-base text-indigo-500 font-medium text-center sm:text-base text-xs"> Secretary </p>
+                      <h2 class="text-base text-gray-900 font-medium title-font mb-2 member-name text-center mx-auto" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.9rem;">
                         <a href="https://www.instagram.com/indrajit9926/" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Indrajit Mandal</a>
                       </h2>
                       <p class="leading-relaxed text-sm text-gray-600 text-center sm:text-sm text-xs">
@@ -274,15 +286,15 @@
                   </div>
                   <!-- Card 3 -->
                   <div class="xl:w-1/3 md:w-1/2 w-full p-4 flex justify-center">
-                    <div class="border border-gray-200 p-6 rounded-lg w-full max-w-sm mx-auto transform transition duration-500 hover:scale-105 hover:shadow-lg text-center md:w-full sm:w-4/5 w-3/4 sm:mx-5 mx-7 sm:p-6 p-4">
+                    <div class="team-card border border-gray-200 p-6 rounded-lg w-full max-w-sm mx-auto transform transition duration-500 hover:scale-105 hover:shadow-lg text-center" style="border: 2px solid #e5e7eb; width: 70% !important; max-width: 280px !important;">
                       <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 mx-auto">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                           <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                           <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                       </div>
-                      <p class="leading-relaxed text-base text-indigo-500 font-medium text-center sm:text-base text-sm">Event Coordinator</p>
-                      <h2 class="text-lg text-gray-900 font-medium title-font mb-2 member-name text-center mx-auto sm:text-lg text-base" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                      <p class="leading-relaxed text-base text-indigo-500 font-medium text-center sm:text-base text-xs">Event Coordinator</p>
+                      <h2 class="text-base text-gray-900 font-medium title-font mb-2 member-name text-center mx-auto" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.9rem;">
                         <a href="https://www.instagram.com/bishal_3075" target="_blank" class="hover:text-indigo-500 transition-colors duration-300">Hiranmay Das</a>
                       </h2>
                       <p class="leading-relaxed text-sm text-gray-600 text-center sm:text-sm text-xs">
