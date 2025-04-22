@@ -49,6 +49,21 @@
           margin-left: auto;
           margin-right: auto;
         }
+
+        #logo-nexgen {
+          position: relative;
+          left: 0;
+          margin-left: 0 !important;
+          transform: translateX(-120px);
+        }
+        .columns.is-mobile.is-vcentered {
+          margin-left: 0 !important;
+          padding-left: 0 !important;
+        }
+        .column.is-mobile.is-vcentered {
+          margin-left: 0 !important;
+          padding-left: 0 !important;
+        }
       }
     </style>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -185,12 +200,14 @@
       <header id="nexgen-header" class="columns is-fluid is-marginless">
         <div class="column is-mobile is-vcentered">
           <div class="columns is-mobile is-vcentered">
-            <div id="logo-nexgen" class="column">
-              <div class="logo-nexgen"><a href="index.html" rel="home"><img src="img/logo.png" alt="nexgen" class="logo hoverable" /></a></div>
+            <div id="logo-nexgen" class="column" style="margin-left: 0; padding-left: 0;">
+              <div class="logo-nexgen">
+                <a href="index.html" rel="home">
+                  <img src="img/logo.png" alt="nexgen" class="logo hoverable" />
+                </a>
+              </div>
             </div>
-            <!-- .site-branding -->
-            <div class="column is-narrow">
-              <!--	<nav id="site-navigation"><div class="menu-main-menu-pt-container"><ul id="primary-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-66 current_page_item menu-item-68"><a href="/quem-somos/" aria-current="page">Quem Somos</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="/portfolio/">Portfolio</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="/casos-de-sucesso/">Casos de Sucesso</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="/blog/">Blog</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="/contactos/">Contactos</a></li><li class="menu-item wpml-ls-slot-2 wpml-ls-item wpml-ls-item-en wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-2-en"><a href="/en/about-us/" title="Switch to English"><span class="wpml-ls-native" lang="en">English</span></a></li></ul></div></nav>-->
+            <div class="column is-narrow ml-auto">
               <div class="nav-but-wrap hoverable">
                 <div class="menu-icon hover-target">
                   <span class="menu-icon__line menu-icon__line-left"></span>
@@ -201,9 +218,8 @@
             </div>
           </div>
         </div>
-        <!-- #site-navigation -->
       </header>
-      <!-- #masthead --><div id="content" class="content div-top-middle"><div id="loader-wrapper"><div id="loader">
+      <div id="content" class="content div-top-middle"><div id="loader-wrapper"><div id="loader">
             <div class="symbol-nexgen">
               <img id="loading" src="img/logo.png" alt="nexgen logo" class="logo" />
             </div>
